@@ -27,6 +27,7 @@
     @include laptop {
       column-gap: rem(2);
       font-size: rem(14);
+      padding: rem(6) rem(12);
     }
 
     &.is-active {
