@@ -7,7 +7,7 @@
   }
 
   &__preview,
-  &__body{
+  &__body {
     padding: rem(80);
 
     @include laptop {
@@ -37,7 +37,7 @@
       row-gap: fluid(50, 24);
 
       @include tablet {
-        justify-content: start ;
+        justify-content: start;
       }
     }
 

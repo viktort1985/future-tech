@@ -30,11 +30,11 @@
         @include tablet {
           grid-column: -1 / 1;
 
-        .footer__menu-list {
-          flex-direction: row;
-          flex-wrap: wrap;
-          gap: rem(12);
-        }
+          .footer__menu-list {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: rem(12);
+          }
         }
       }
 
@@ -73,10 +73,11 @@
       &-list {
         display: flex;
       }
+
       &-item {
         &:not(:last-child)::after {
-            content: '|';
-            margin-inline: rem(11);
+          content: '|';
+          margin-inline: rem(11);
         }
       }
     }

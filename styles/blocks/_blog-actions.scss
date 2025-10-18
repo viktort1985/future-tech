@@ -3,8 +3,8 @@
 
 .blog-actions {
   &__list {
-  display: flex;
-  column-gap: rem(10);
+    display: flex;
+    column-gap: rem(10);
 
     @include laptop {
       column-gap: rem(8);
@@ -16,7 +16,7 @@
     display: inline-flex;
     align-items: center;
     background-color: var(--color-dark-10);
-    column-gap:  rem(4);
+    column-gap: rem(4);
     font-font: var(--font-family-accent);
     font-size: rem(18);
     padding: rem(8) rem(16);
@@ -33,7 +33,7 @@
     &.is-active {
       svg * {
         fill: var(--color-red);
-        stroke: var(--color-red)s;
+        stroke: var(--color-red) s;
       }
     }
   }
@@ -52,6 +52,7 @@
     svg {
       width: 100%;
       height: 100%;
+
       * {
         fill: transparent;
       }

@@ -2,7 +2,7 @@
 
 .tabs {
   &__header {
-      border-bottom: var(--border);
+    border-bottom: var(--border);
 
     @include tablet {
       overflow-x: auto;

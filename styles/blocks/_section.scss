@@ -31,11 +31,12 @@
       row-gap: rem(10);
     }
   }
+
   &__subtitle {
     justify-self: start;
   }
 
   &__body {
-    border-block:  var(--border);
+    border-block: var(--border);
   }
 }

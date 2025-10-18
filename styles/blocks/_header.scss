@@ -8,7 +8,7 @@
   animation-fill-mode: both;
   animation-timeline: scroll();
   animation-range: rem(100) rem(200);
-  
+
   @keyframes scrolling-header {
     to {
       box-shadow: 0 0 1rem 0 var(--color-dark-40);
@@ -43,7 +43,7 @@
     }
   }
 
-  &__overlay{
+  &__overlay {
     @include mobile-above {
       display: contents;
     }
@@ -57,7 +57,7 @@
       row-gap: 3rem;
       padding: 1rem;
       background-color: var(--color-dark-10);
-      transition-duration:  var(--transition-duration);
+      transition-duration: var(--transition-duration);
 
       &:not(.is-active) {
         @include hide;
@@ -72,6 +72,7 @@
     @include mobile {
       overflow-y: auto;
     }
+
     &-list {
       display: flex;
       align-items: center;
@@ -86,23 +87,24 @@
       }
 
     }
-      &-link {
-        padding: rem(14) rem(24);
-        color: var(--color-grey-50);
 
-        @include laptop {
-          padding: rem(10) rem(18);
-        }
+    &-link {
+      padding: rem(14) rem(24);
+      color: var(--color-grey-50);
 
-        &.is-active {
-          color: var(--color-light);
-          font-weight: 500;
-          background-color: var(--color-dark);
-          border: var(--border);
-          border-radius: rem(10);
-          pointer-events: none;
-        }
+      @include laptop {
+        padding: rem(10) rem(18);
       }
+
+      &.is-active {
+        color: var(--color-light);
+        font-weight: 500;
+        background-color: var(--color-dark);
+        border: var(--border);
+        border-radius: rem(10);
+        pointer-events: none;
+      }
+    }
   }
 
   &__contact-us-link {

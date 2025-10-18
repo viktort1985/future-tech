@@ -4,7 +4,7 @@
   --imageSize: #{rem(80)};
 
   display: flex;
-  align-items:  center;
+  align-items: center;
   column-gap: fluid(16, 8);
 
   @include laptop {
@@ -25,7 +25,7 @@
     display: grid;
 
     @include laptop-above {
-    row-gap: rem(2);
+      row-gap: rem(2);
     }
   }
 

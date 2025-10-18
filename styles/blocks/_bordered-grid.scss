@@ -7,11 +7,11 @@
   display: grid;
   grid-template-columns: repeat(var(--columns), 1fr);
 
-  &--2-cols  {
+  &--2-cols {
     --columns: 2;
   }
 
-  &--3-cols  {
+  &--3-cols {
     --columns: 3;
     --itemPaddingX: #{rem(50)};
 
@@ -28,17 +28,19 @@
         //элементы в 1-й и 2-й колонке
         &:nth-child(3n - 2),
         &:nth-child(3n - 1) {
-          padding-right:  var(--itemPaddingX);
-          border-right: var(--border) ;
+          padding-right: var(--itemPaddingX);
+          border-right: var(--border);
         }
+
         // элементы  во 2-й колонке
         &:nth-child(3n-1) {
           @include full-vw-centered-line(bottom);
         }
+
         //элементы во 2-й и 3-й колонке
         &:nth-child(3n - 1),
         &:nth-child(3n) {
-          padding-left:  var(--itemPaddingX);
+          padding-left: var(--itemPaddingX);
         }
       }
 
@@ -47,6 +49,7 @@
       }
     }
   }
+
   &__item {
     padding-block: var(--itemPaddingY);
   }
