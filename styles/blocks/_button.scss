@@ -9,6 +9,7 @@
   background-color: var(--color-dark);
   border: var(--border);
   border-radius: rem(12);
+  color: inherit;
 
 
   @include laptop {
